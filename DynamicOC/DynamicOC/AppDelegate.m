@@ -11,7 +11,7 @@
 #import "ASTUtil.h"
 #import "OCCfuntionHelper.h"
 #import "ASTCallMethod.h"
-
+#import "ViewController.h"
 #import <objc/runtime.h>
 #import <dlfcn.h>
 
@@ -44,7 +44,7 @@
 
 	[ASTUtil registerVariableForYacc:@"self"];
 
-	text_OC_Str = @"\
+	NSString* textRoot_OC_Str = @"\
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; \
 	self.window.backgroundColor = [UIColor whiteColor]; \
 	ViewController *vc = [[ViewController alloc] init];	\
@@ -55,7 +55,7 @@
 	return 666; \
 	";
 
-	root = [ASTUtil parseString:text_OC_Str];
+	root = [ASTUtil parseString:textRoot_OC_Str];
 	ASTVariable* varSelf = [[ASTVariable alloc]init];
 	varSelf.value = self;
 	varSelf.type  = ASTNodeTypeVariable;
@@ -119,7 +119,8 @@
     tableView.tableFooterView = [UIView new];\
     tableView.tableHeaderView = [UIView new];\
 	UIActivityIndicatorView* loadingView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:2];	\
-	loadingView.frame = CGRectMake(self.view.frame.size.width/2.0-22, self.view.frame.size.height/2.0-22, 44, 44);	\
+    loadingView.backgroundColor = [UIColor redColor];\
+	loadingView.frame = CGRectMake(self.view.frame.size.width/2.0-50, self.view.frame.size.height/2.0-100, 100, 100);	\
 	[loadingView startAnimating];	\
 	[self.view addSubview:loadingView];	\
     NSURL *url = [NSURL URLWithString:@\"https://jobs.github.com/positions.json?page=1&search=iOS\"];\
@@ -134,6 +135,7 @@
 		}\
     }];\
     ";
+    
 
     [DynamicOC hookClass:@"ViewController"
              selector:@"viewDidLoad"
@@ -143,6 +145,83 @@
 
     
 	return YES;
+    
+    
+    [OCCfuntionHelper defineCFunction:@"NSSelectorFromString" types:@"SEL,NSString *"];
+    [OCCfuntionHelper defineCFunction:@"class_getMethodImplementation" types:@"IMP,Class,SEL"];
+    [OCCfuntionHelper defineCFunction:@"class_addMethod" types:@"BOOL,Class,SEL,IMP,char *"];
+    SEL viewDidLoad = NSSelectorFromString(@"viewDidLoad");
+    IMP imp = class_getMethodImplementation([ViewController class], viewDidLoad);
+    SEL selector = NSSelectorFromString(@"tableView:numberOfRowsInSection:");
+    BOOL didAdd1 = class_addMethod([ViewController class], selector,imp ,@"i@:@i");
+    SEL selector2 = NSSelectorFromString(@"tableView:cellForRowAtIndexPath:");
+    BOOL didAdd2 = class_addMethod([ViewController class], selector2,imp,@"@@:@@");
+    return didAdd2;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ViewController *vc = [[ViewController alloc] init];
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc ];
+    navc.navigationBar.translucent = NO;
+    self.window.rootViewController = navc;
+    [self.window makeKeyAndVisible];
+    return 666;
+    
+    NSArray *array = objc_getAssociatedObject(self, @"data");
+    if (array != nil) {
+        return array.count;
+    }else{
+        return 0;
+    };
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"aCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:3 reuseIdentifier:@"aCell"];
+        
+    }
+    NSArray *array = objc_getAssociatedObject(self, @"data");
+    NSDictionary *model = array[indexPath.row];
+    NSString *title = model[@"title"];
+    if (title.length > 45) {
+        title = [title substringWithRange:NSMakeRange(0, 45)];
+        
+    }
+    cell.textLabel.text = title;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@,%@,%@",model[@"company"],model[@"location"],model[@"created_at"]];
+    return cell;
+    
+    [OCCfuntionHelper defineCFunction:@"objc_setAssociatedObject" types:@"void,id,void *,id,unsigned int"];
+    [OCCfuntionHelper defineCFunction:@"objc_getAssociatedObject" types:@"id,id,void *"];
+    [originalInvocation invoke];
+    self.title = @"123";
+    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64);
+    UITableView *tableView = [[UITableView alloc] initWithFrame:frame style:0];
+    [self.view addSubview:tableView];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    tableView.tableFooterView = [UIView new];
+    tableView.tableHeaderView = [UIView new];
+    UIActivityIndicatorView* loadingView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:2];
+    loadingView.backgroundColor = [UIColor redColor];
+    loadingView.frame = CGRectMake(self.view.frame.size.width/2.0-50, self.view.frame.size.height/2.0-100, 100, 100);
+    [loadingView startAnimating];
+    [self.view addSubview:loadingView];
+    NSURL *url = [NSURL URLWithString:@"https://jobs.github.com/positions.json?page=1&search=iOS"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * response, NSData * data, NSError * connectionError) {
+        if(!self) return;
+        [loadingView stopAnimating];
+        if(data){
+            NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            objc_setAssociatedObject(self, @"data", array, 1);
+            [tableView reloadData];
+            
+        }
+        
+    }];
+    
+    
+    
 }
 
 

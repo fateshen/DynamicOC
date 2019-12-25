@@ -7,57 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D36DBBE236FFE9B00CC02CC /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBBD236FFE9B00CC02CC /* BaseVC.m */; };
+		5D36DBF6236FFEEB00CC02CC /* ASTBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBC2236FFEEB00CC02CC /* ASTBlockNode.m */; };
+		5D36DBF7236FFEEB00CC02CC /* ASTCallMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBC4236FFEEB00CC02CC /* ASTCallMethod.m */; };
+		5D36DBF8236FFEEB00CC02CC /* ASTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBC6236FFEEB00CC02CC /* ASTContext.m */; };
+		5D36DBF9236FFEEB00CC02CC /* ASTMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBC9236FFEEB00CC02CC /* ASTMethodNode.m */; };
+		5D36DBFA236FFEEB00CC02CC /* ASTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBCB236FFEEB00CC02CC /* ASTNode.m */; };
+		5D36DBFB236FFEEB00CC02CC /* ASTPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBCD236FFEEB00CC02CC /* ASTPropertyNode.m */; };
+		5D36DBFC236FFEEB00CC02CC /* ASTType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBCF236FFEEB00CC02CC /* ASTType.m */; };
+		5D36DBFD236FFEEB00CC02CC /* ASTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBD1236FFEEB00CC02CC /* ASTUtil.m */; };
+		5D36DBFE236FFEEB00CC02CC /* ASTVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBD3236FFEEB00CC02CC /* ASTVariable.m */; };
+		5D36DBFF236FFEEB00CC02CC /* DynamicOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBD5236FFEEB00CC02CC /* DynamicOC.m */; };
+		5D36DC00236FFEEB00CC02CC /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBD7236FFEEB00CC02CC /* OCBlockWrapper.m */; };
+		5D36DC01236FFEEB00CC02CC /* parser.ym in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBD9236FFEEB00CC02CC /* parser.ym */; };
+		5D36DC02236FFEEB00CC02CC /* tokenizer.lm in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBDA236FFEEB00CC02CC /* tokenizer.lm */; };
+		5D36DC03236FFEEB00CC02CC /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBDE236FFEEB00CC02CC /* Aspects.m */; };
+		5D36DC04236FFEEB00CC02CC /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D36DBEB236FFEEB00CC02CC /* libffi.a */; };
+		5D36DC05236FFEEB00CC02CC /* NSValue+struct.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBED236FFEEB00CC02CC /* NSValue+struct.m */; };
+		5D36DC06236FFEEB00CC02CC /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBEF236FFEEB00CC02CC /* OCCfuntionHelper.m */; };
+		5D36DC07236FFEEB00CC02CC /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBF1236FFEEB00CC02CC /* OCCFuntionWrapper.m */; };
+		5D36DC08236FFEEB00CC02CC /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBF3236FFEEB00CC02CC /* OCExtension.m */; };
+		5D36DC09236FFEEB00CC02CC /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D36DBF5236FFEEB00CC02CC /* OCMethodSignature.m */; };
 		C40BAE6D22E6E5E500885A9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAE6C22E6E5E500885A9D /* AppDelegate.m */; };
 		C40BAE7022E6E5E500885A9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAE6F22E6E5E500885A9D /* ViewController.m */; };
 		C40BAE7322E6E5E500885A9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40BAE7122E6E5E500885A9D /* Main.storyboard */; };
 		C40BAE7522E6E5E600885A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40BAE7422E6E5E600885A9D /* Assets.xcassets */; };
 		C40BAE7822E6E5E600885A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40BAE7622E6E5E600885A9D /* LaunchScreen.storyboard */; };
 		C40BAE7B22E6E5E600885A9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAE7A22E6E5E600885A9D /* main.m */; };
-		C40BAFE822E6E62C00885A9D /* ASTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDA22E6E62C00885A9D /* ASTUtil.m */; };
-		C40BAFE922E6E62C00885A9D /* ASTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDA22E6E62C00885A9D /* ASTUtil.m */; };
-		C40BAFEA22E6E62C00885A9D /* ASTPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */; };
-		C40BAFEB22E6E62C00885A9D /* ASTPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */; };
-		C40BAFEC22E6E62C00885A9D /* ASTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDE22E6E62C00885A9D /* ASTContext.m */; };
-		C40BAFED22E6E62C00885A9D /* ASTContext.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFDE22E6E62C00885A9D /* ASTContext.m */; };
-		C40BAFEE22E6E62C00885A9D /* ASTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE022E6E62C00885A9D /* ASTNode.m */; };
-		C40BAFEF22E6E62C00885A9D /* ASTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE022E6E62C00885A9D /* ASTNode.m */; };
-		C40BAFF022E6E62C00885A9D /* ASTCallMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */; };
-		C40BAFF122E6E62C00885A9D /* ASTCallMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */; };
-		C40BAFF222E6E62C00885A9D /* ASTVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE422E6E62C00885A9D /* ASTVariable.m */; };
-		C40BAFF322E6E62C00885A9D /* ASTVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFE422E6E62C00885A9D /* ASTVariable.m */; };
-		C40BB0DB22E6E63D00885A9D /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */; };
-		C40BB0DC22E6E63D00885A9D /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */; };
-		C40BB19722E6E63D00885A9D /* NSValue+struct.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0C422E6E63D00885A9D /* NSValue+struct.m */; };
-		C40BB19822E6E63D00885A9D /* NSValue+struct.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0C422E6E63D00885A9D /* NSValue+struct.m */; };
-		C40BB19B22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */; };
-		C40BB19C22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */; };
-		C40BB19D22E6E63D00885A9D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CB22E6E63D00885A9D /* Aspects.m */; };
-		C40BB19E22E6E63D00885A9D /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CB22E6E63D00885A9D /* Aspects.m */; };
-		C40BB19F22E6E63D00885A9D /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */; };
-		C40BB1A022E6E63D00885A9D /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */; };
-		C40BB1AA22E6E64700885A9D /* parser.ym in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A522E6E64700885A9D /* parser.ym */; };
-		C40BB1AB22E6E64700885A9D /* parser.ym in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A522E6E64700885A9D /* parser.ym */; };
-		C40BB1AE22E6E64700885A9D /* tokenizer.lm in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A722E6E64700885A9D /* tokenizer.lm */; };
-		C40BB1AF22E6E64700885A9D /* tokenizer.lm in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1A722E6E64700885A9D /* tokenizer.lm */; };
 		C40BB1B122E6E6EE00885A9D /* CallCFunctionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B022E6E6EE00885A9D /* CallCFunctionTest.m */; };
 		C40BB1B322E6EAC200885A9D /* CallOCFunctionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B222E6EAC200885A9D /* CallOCFunctionTest.m */; };
 		C40BB1B522E6EB6400885A9D /* OCIfControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B422E6EB6400885A9D /* OCIfControlTest.m */; };
 		C40BB1B722E711E900885A9D /* OCWhileControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B622E711E900885A9D /* OCWhileControlTest.m */; };
 		C40BB1B922E7F18F00885A9D /* OCPropertyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1B822E7F18F00885A9D /* OCPropertyTest.m */; };
-		C40BB1C222E8048D00885A9D /* ASTMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1C122E8048D00885A9D /* ASTMethodNode.m */; };
-		C40BB1C322E8048D00885A9D /* ASTMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C40BB1C122E8048D00885A9D /* ASTMethodNode.m */; };
 		C4D51D3722EB072C009FEAEA /* OCBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D51D3622EB072C009FEAEA /* OCBlockTest.m */; };
-		C4FD4B0A22EE94810071652D /* DynamicOC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0922EE94810071652D /* DynamicOC.m */; };
-		C4FD4B0D22EECCAA0071652D /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0C22EECCAA0071652D /* OCExtension.m */; };
-		C4FD4B0E22EECCAA0071652D /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FD4B0C22EECCAA0071652D /* OCExtension.m */; };
-		C4FD4B1322F015270071652D /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40BB0D622E6E63D00885A9D /* libffi.a */; };
-		C4FD4B1422F0153E0071652D /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40BB0D622E6E63D00885A9D /* libffi.a */; };
-		E266C65422EC518500E3CB78 /* ASTBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65322EC518500E3CB78 /* ASTBlockNode.m */; };
-		E266C65522EC518500E3CB78 /* ASTBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65322EC518500E3CB78 /* ASTBlockNode.m */; };
-		E266C65822EC5A3600E3CB78 /* ASTType.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65722EC5A3600E3CB78 /* ASTType.m */; };
-		E266C65922EC5A3600E3CB78 /* ASTType.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65722EC5A3600E3CB78 /* ASTType.m */; };
-		E266C65C22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */; };
-		E266C65D22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */; };
 		E289986A22E73D6C00811B14 /* OCForControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E289986922E73D6C00811B14 /* OCForControlTest.m */; };
 		E289986C22E741D000811B14 /* ArithmeticTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E289986B22E741D000811B14 /* ArithmeticTest.m */; };
 		E289986E22E745A300811B14 /* UnaryOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E289986D22E745A300811B14 /* UnaryOperationTest.m */; };
@@ -75,6 +57,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D36DBBC236FFE9B00CC02CC /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		5D36DBBD236FFE9B00CC02CC /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		5D36DBC1236FFEEB00CC02CC /* ASTBlockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTBlockNode.h; sourceTree = "<group>"; };
+		5D36DBC2236FFEEB00CC02CC /* ASTBlockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTBlockNode.m; sourceTree = "<group>"; };
+		5D36DBC3236FFEEB00CC02CC /* ASTCallMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCallMethod.h; sourceTree = "<group>"; };
+		5D36DBC4236FFEEB00CC02CC /* ASTCallMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTCallMethod.m; sourceTree = "<group>"; };
+		5D36DBC5236FFEEB00CC02CC /* ASTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTContext.h; sourceTree = "<group>"; };
+		5D36DBC6236FFEEB00CC02CC /* ASTContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTContext.m; sourceTree = "<group>"; };
+		5D36DBC7236FFEEB00CC02CC /* ASTHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTHeader.h; sourceTree = "<group>"; };
+		5D36DBC8236FFEEB00CC02CC /* ASTMethodNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTMethodNode.h; sourceTree = "<group>"; };
+		5D36DBC9236FFEEB00CC02CC /* ASTMethodNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTMethodNode.m; sourceTree = "<group>"; };
+		5D36DBCA236FFEEB00CC02CC /* ASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNode.h; sourceTree = "<group>"; };
+		5D36DBCB236FFEEB00CC02CC /* ASTNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNode.m; sourceTree = "<group>"; };
+		5D36DBCC236FFEEB00CC02CC /* ASTPropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTPropertyNode.h; sourceTree = "<group>"; };
+		5D36DBCD236FFEEB00CC02CC /* ASTPropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTPropertyNode.m; sourceTree = "<group>"; };
+		5D36DBCE236FFEEB00CC02CC /* ASTType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTType.h; sourceTree = "<group>"; };
+		5D36DBCF236FFEEB00CC02CC /* ASTType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTType.m; sourceTree = "<group>"; };
+		5D36DBD0236FFEEB00CC02CC /* ASTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTUtil.h; sourceTree = "<group>"; };
+		5D36DBD1236FFEEB00CC02CC /* ASTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTUtil.m; sourceTree = "<group>"; };
+		5D36DBD2236FFEEB00CC02CC /* ASTVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTVariable.h; sourceTree = "<group>"; };
+		5D36DBD3236FFEEB00CC02CC /* ASTVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTVariable.m; sourceTree = "<group>"; };
+		5D36DBD4236FFEEB00CC02CC /* DynamicOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicOC.h; sourceTree = "<group>"; };
+		5D36DBD5236FFEEB00CC02CC /* DynamicOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicOC.m; sourceTree = "<group>"; };
+		5D36DBD6236FFEEB00CC02CC /* OCBlockWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBlockWrapper.h; sourceTree = "<group>"; };
+		5D36DBD7236FFEEB00CC02CC /* OCBlockWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBlockWrapper.m; sourceTree = "<group>"; };
+		5D36DBD9236FFEEB00CC02CC /* parser.ym */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = parser.ym; sourceTree = "<group>"; };
+		5D36DBDA236FFEEB00CC02CC /* tokenizer.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = tokenizer.lm; sourceTree = "<group>"; };
+		5D36DBDD236FFEEB00CC02CC /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		5D36DBDE236FFEEB00CC02CC /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		5D36DBE1236FFEEB00CC02CC /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		5D36DBE2236FFEEB00CC02CC /* ffi_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm.h; sourceTree = "<group>"; };
+		5D36DBE3236FFEEB00CC02CC /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		5D36DBE4236FFEEB00CC02CC /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
+		5D36DBE5236FFEEB00CC02CC /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		5D36DBE6236FFEEB00CC02CC /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		5D36DBE7236FFEEB00CC02CC /* ffitarget_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm.h; sourceTree = "<group>"; };
+		5D36DBE8236FFEEB00CC02CC /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		5D36DBE9236FFEEB00CC02CC /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
+		5D36DBEA236FFEEB00CC02CC /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		5D36DBEB236FFEEB00CC02CC /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
+		5D36DBEC236FFEEB00CC02CC /* NSValue+struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+struct.h"; sourceTree = "<group>"; };
+		5D36DBED236FFEEB00CC02CC /* NSValue+struct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+struct.m"; sourceTree = "<group>"; };
+		5D36DBEE236FFEEB00CC02CC /* OCCfuntionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCfuntionHelper.h; sourceTree = "<group>"; };
+		5D36DBEF236FFEEB00CC02CC /* OCCfuntionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCfuntionHelper.m; sourceTree = "<group>"; };
+		5D36DBF0236FFEEB00CC02CC /* OCCFuntionWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCFuntionWrapper.h; sourceTree = "<group>"; };
+		5D36DBF1236FFEEB00CC02CC /* OCCFuntionWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCFuntionWrapper.m; sourceTree = "<group>"; };
+		5D36DBF2236FFEEB00CC02CC /* OCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
+		5D36DBF3236FFEEB00CC02CC /* OCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
+		5D36DBF4236FFEEB00CC02CC /* OCMethodSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodSignature.h; sourceTree = "<group>"; };
+		5D36DBF5236FFEEB00CC02CC /* OCMethodSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodSignature.m; sourceTree = "<group>"; };
 		C40BAE6822E6E5E500885A9D /* DynamicOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40BAE6B22E6E5E500885A9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C40BAE6C22E6E5E500885A9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,60 +119,12 @@
 		C40BAE7A22E6E5E600885A9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C40BAE8022E6E5E600885A9D /* DynamicOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40BAE8622E6E5E600885A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C40BAFDA22E6E62C00885A9D /* ASTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTUtil.m; sourceTree = "<group>"; };
-		C40BAFDB22E6E62C00885A9D /* ASTContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTContext.h; sourceTree = "<group>"; };
-		C40BAFDC22E6E62C00885A9D /* ASTNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNode.h; sourceTree = "<group>"; };
-		C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTPropertyNode.m; sourceTree = "<group>"; };
-		C40BAFDE22E6E62C00885A9D /* ASTContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTContext.m; sourceTree = "<group>"; };
-		C40BAFDF22E6E62C00885A9D /* ASTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTUtil.h; sourceTree = "<group>"; };
-		C40BAFE022E6E62C00885A9D /* ASTNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNode.m; sourceTree = "<group>"; };
-		C40BAFE222E6E62C00885A9D /* ASTVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTVariable.h; sourceTree = "<group>"; };
-		C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTCallMethod.m; sourceTree = "<group>"; };
-		C40BAFE422E6E62C00885A9D /* ASTVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTVariable.m; sourceTree = "<group>"; };
-		C40BAFE522E6E62C00885A9D /* ASTCallMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCallMethod.h; sourceTree = "<group>"; };
-		C40BAFE622E6E62C00885A9D /* ASTPropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTPropertyNode.h; sourceTree = "<group>"; };
-		C40BAFE722E6E62C00885A9D /* ASTHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTHeader.h; sourceTree = "<group>"; };
-		C40BAFF622E6E63C00885A9D /* OCMethodSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodSignature.h; sourceTree = "<group>"; };
-		C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodSignature.m; sourceTree = "<group>"; };
-		C40BB0C322E6E63D00885A9D /* OCCFuntionWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCFuntionWrapper.h; sourceTree = "<group>"; };
-		C40BB0C422E6E63D00885A9D /* NSValue+struct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+struct.m"; sourceTree = "<group>"; };
-		C40BB0C622E6E63D00885A9D /* OCCfuntionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCfuntionHelper.h; sourceTree = "<group>"; };
-		C40BB0C722E6E63D00885A9D /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		C40BB0C922E6E63D00885A9D /* NSValue+struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+struct.h"; sourceTree = "<group>"; };
-		C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCFuntionWrapper.m; sourceTree = "<group>"; };
-		C40BB0CB22E6E63D00885A9D /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
-		C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCfuntionHelper.m; sourceTree = "<group>"; };
-		C40BB0CE22E6E63D00885A9D /* ffitarget_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
-		C40BB0CF22E6E63D00885A9D /* ffitarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
-		C40BB0D022E6E63D00885A9D /* ffi_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm.h; sourceTree = "<group>"; };
-		C40BB0D122E6E63D00885A9D /* ffi_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
-		C40BB0D222E6E63D00885A9D /* ffitarget_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
-		C40BB0D322E6E63D00885A9D /* ffi_x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
-		C40BB0D422E6E63D00885A9D /* ffitarget_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm.h; sourceTree = "<group>"; };
-		C40BB0D522E6E63D00885A9D /* ffitarget_i386.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
-		C40BB0D622E6E63D00885A9D /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
-		C40BB0D722E6E63D00885A9D /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
-		C40BB0D822E6E63D00885A9D /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
-		C40BB1A522E6E64700885A9D /* parser.ym */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.yacc; path = parser.ym; sourceTree = "<group>"; };
-		C40BB1A722E6E64700885A9D /* tokenizer.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = tokenizer.lm; sourceTree = "<group>"; };
 		C40BB1B022E6E6EE00885A9D /* CallCFunctionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallCFunctionTest.m; sourceTree = "<group>"; };
 		C40BB1B222E6EAC200885A9D /* CallOCFunctionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallOCFunctionTest.m; sourceTree = "<group>"; };
 		C40BB1B422E6EB6400885A9D /* OCIfControlTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCIfControlTest.m; sourceTree = "<group>"; };
 		C40BB1B622E711E900885A9D /* OCWhileControlTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCWhileControlTest.m; sourceTree = "<group>"; };
 		C40BB1B822E7F18F00885A9D /* OCPropertyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPropertyTest.m; sourceTree = "<group>"; };
-		C40BB1C022E8048D00885A9D /* ASTMethodNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTMethodNode.h; sourceTree = "<group>"; };
-		C40BB1C122E8048D00885A9D /* ASTMethodNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTMethodNode.m; sourceTree = "<group>"; };
 		C4D51D3622EB072C009FEAEA /* OCBlockTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBlockTest.m; sourceTree = "<group>"; };
-		C4FD4B0822EE94810071652D /* DynamicOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicOC.h; sourceTree = "<group>"; };
-		C4FD4B0922EE94810071652D /* DynamicOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicOC.m; sourceTree = "<group>"; };
-		C4FD4B0B22EECCA90071652D /* OCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
-		C4FD4B0C22EECCAA0071652D /* OCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
-		E266C65222EC518500E3CB78 /* ASTBlockNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTBlockNode.h; sourceTree = "<group>"; };
-		E266C65322EC518500E3CB78 /* ASTBlockNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTBlockNode.m; sourceTree = "<group>"; };
-		E266C65622EC5A3600E3CB78 /* ASTType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTType.h; sourceTree = "<group>"; };
-		E266C65722EC5A3600E3CB78 /* ASTType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTType.m; sourceTree = "<group>"; };
-		E266C65A22ED47AA00E3CB78 /* OCBlockWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBlockWrapper.h; sourceTree = "<group>"; };
-		E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBlockWrapper.m; sourceTree = "<group>"; };
 		E289986922E73D6C00811B14 /* OCForControlTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCForControlTest.m; sourceTree = "<group>"; };
 		E289986B22E741D000811B14 /* ArithmeticTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArithmeticTest.m; sourceTree = "<group>"; };
 		E289986D22E745A300811B14 /* UnaryOperationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnaryOperationTest.m; sourceTree = "<group>"; };
@@ -152,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FD4B1322F015270071652D /* libffi.a in Frameworks */,
+				5D36DC04236FFEEB00CC02CC /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,13 +144,115 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FD4B1422F0153E0071652D /* libffi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D36DBBF236FFEEB00CC02CC /* SSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBC0236FFEEB00CC02CC /* Class */,
+				5D36DBD8236FFEEB00CC02CC /* Parser */,
+				5D36DBDB236FFEEB00CC02CC /* Vendor */,
+			);
+			path = SSPatch;
+			sourceTree = "<group>";
+		};
+		5D36DBC0236FFEEB00CC02CC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBC1236FFEEB00CC02CC /* ASTBlockNode.h */,
+				5D36DBC2236FFEEB00CC02CC /* ASTBlockNode.m */,
+				5D36DBC3236FFEEB00CC02CC /* ASTCallMethod.h */,
+				5D36DBC4236FFEEB00CC02CC /* ASTCallMethod.m */,
+				5D36DBC5236FFEEB00CC02CC /* ASTContext.h */,
+				5D36DBC6236FFEEB00CC02CC /* ASTContext.m */,
+				5D36DBC7236FFEEB00CC02CC /* ASTHeader.h */,
+				5D36DBC8236FFEEB00CC02CC /* ASTMethodNode.h */,
+				5D36DBC9236FFEEB00CC02CC /* ASTMethodNode.m */,
+				5D36DBCA236FFEEB00CC02CC /* ASTNode.h */,
+				5D36DBCB236FFEEB00CC02CC /* ASTNode.m */,
+				5D36DBCC236FFEEB00CC02CC /* ASTPropertyNode.h */,
+				5D36DBCD236FFEEB00CC02CC /* ASTPropertyNode.m */,
+				5D36DBCE236FFEEB00CC02CC /* ASTType.h */,
+				5D36DBCF236FFEEB00CC02CC /* ASTType.m */,
+				5D36DBD0236FFEEB00CC02CC /* ASTUtil.h */,
+				5D36DBD1236FFEEB00CC02CC /* ASTUtil.m */,
+				5D36DBD2236FFEEB00CC02CC /* ASTVariable.h */,
+				5D36DBD3236FFEEB00CC02CC /* ASTVariable.m */,
+				5D36DBD4236FFEEB00CC02CC /* DynamicOC.h */,
+				5D36DBD5236FFEEB00CC02CC /* DynamicOC.m */,
+				5D36DBD6236FFEEB00CC02CC /* OCBlockWrapper.h */,
+				5D36DBD7236FFEEB00CC02CC /* OCBlockWrapper.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		5D36DBD8236FFEEB00CC02CC /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBD9236FFEEB00CC02CC /* parser.ym */,
+				5D36DBDA236FFEEB00CC02CC /* tokenizer.lm */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		5D36DBDB236FFEEB00CC02CC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBDC236FFEEB00CC02CC /* Aspects */,
+				5D36DBDF236FFEEB00CC02CC /* OCEval */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		5D36DBDC236FFEEB00CC02CC /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBDD236FFEEB00CC02CC /* Aspects.h */,
+				5D36DBDE236FFEEB00CC02CC /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		5D36DBDF236FFEEB00CC02CC /* OCEval */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBE0236FFEEB00CC02CC /* libffi */,
+				5D36DBEC236FFEEB00CC02CC /* NSValue+struct.h */,
+				5D36DBED236FFEEB00CC02CC /* NSValue+struct.m */,
+				5D36DBEE236FFEEB00CC02CC /* OCCfuntionHelper.h */,
+				5D36DBEF236FFEEB00CC02CC /* OCCfuntionHelper.m */,
+				5D36DBF0236FFEEB00CC02CC /* OCCFuntionWrapper.h */,
+				5D36DBF1236FFEEB00CC02CC /* OCCFuntionWrapper.m */,
+				5D36DBF2236FFEEB00CC02CC /* OCExtension.h */,
+				5D36DBF3236FFEEB00CC02CC /* OCExtension.m */,
+				5D36DBF4236FFEEB00CC02CC /* OCMethodSignature.h */,
+				5D36DBF5236FFEEB00CC02CC /* OCMethodSignature.m */,
+			);
+			path = OCEval;
+			sourceTree = "<group>";
+		};
+		5D36DBE0236FFEEB00CC02CC /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				5D36DBE1236FFEEB00CC02CC /* ffi.h */,
+				5D36DBE2236FFEEB00CC02CC /* ffi_arm.h */,
+				5D36DBE3236FFEEB00CC02CC /* ffi_arm64.h */,
+				5D36DBE4236FFEEB00CC02CC /* ffi_i386.h */,
+				5D36DBE5236FFEEB00CC02CC /* ffi_x86_64.h */,
+				5D36DBE6236FFEEB00CC02CC /* ffitarget.h */,
+				5D36DBE7236FFEEB00CC02CC /* ffitarget_arm.h */,
+				5D36DBE8236FFEEB00CC02CC /* ffitarget_arm64.h */,
+				5D36DBE9236FFEEB00CC02CC /* ffitarget_i386.h */,
+				5D36DBEA236FFEEB00CC02CC /* ffitarget_x86_64.h */,
+				5D36DBEB236FFEEB00CC02CC /* libffi.a */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
 		C40BAE5F22E6E5E500885A9D = {
 			isa = PBXGroup;
 			children = (
@@ -189,13 +275,13 @@
 		C40BAE6A22E6E5E500885A9D /* DynamicOC */ = {
 			isa = PBXGroup;
 			children = (
-				C40BB1A322E6E64700885A9D /* Parser */,
-				C40BAFF422E6E63C00885A9D /* Vendor */,
-				C40BAFD922E6E62C00885A9D /* Class */,
+				5D36DBBF236FFEEB00CC02CC /* SSPatch */,
 				C40BAE6B22E6E5E500885A9D /* AppDelegate.h */,
 				C40BAE6C22E6E5E500885A9D /* AppDelegate.m */,
 				C40BAE6E22E6E5E500885A9D /* ViewController.h */,
 				C40BAE6F22E6E5E500885A9D /* ViewController.m */,
+				5D36DBBC236FFE9B00CC02CC /* BaseVC.h */,
+				5D36DBBD236FFE9B00CC02CC /* BaseVC.m */,
 				C40BAE7422E6E5E600885A9D /* Assets.xcassets */,
 				C40BAE7622E6E5E600885A9D /* LaunchScreen.storyboard */,
 				C40BAE7122E6E5E500885A9D /* Main.storyboard */,
@@ -221,99 +307,6 @@
 				C40BAE8622E6E5E600885A9D /* Info.plist */,
 			);
 			path = DynamicOCUITests;
-			sourceTree = "<group>";
-		};
-		C40BAFD922E6E62C00885A9D /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				E266C65A22ED47AA00E3CB78 /* OCBlockWrapper.h */,
-				E266C65B22ED47AA00E3CB78 /* OCBlockWrapper.m */,
-				C40BAFE722E6E62C00885A9D /* ASTHeader.h */,
-				C40BAFE222E6E62C00885A9D /* ASTVariable.h */,
-				C40BAFE422E6E62C00885A9D /* ASTVariable.m */,
-				C40BAFE522E6E62C00885A9D /* ASTCallMethod.h */,
-				C40BAFE322E6E62C00885A9D /* ASTCallMethod.m */,
-				C40BAFDF22E6E62C00885A9D /* ASTUtil.h */,
-				C40BAFDA22E6E62C00885A9D /* ASTUtil.m */,
-				C40BAFDB22E6E62C00885A9D /* ASTContext.h */,
-				C40BAFDE22E6E62C00885A9D /* ASTContext.m */,
-				C40BAFDC22E6E62C00885A9D /* ASTNode.h */,
-				C40BAFE022E6E62C00885A9D /* ASTNode.m */,
-				C40BAFE622E6E62C00885A9D /* ASTPropertyNode.h */,
-				C40BAFDD22E6E62C00885A9D /* ASTPropertyNode.m */,
-				C40BB1C022E8048D00885A9D /* ASTMethodNode.h */,
-				C40BB1C122E8048D00885A9D /* ASTMethodNode.m */,
-				E266C65222EC518500E3CB78 /* ASTBlockNode.h */,
-				E266C65322EC518500E3CB78 /* ASTBlockNode.m */,
-				E266C65622EC5A3600E3CB78 /* ASTType.h */,
-				E266C65722EC5A3600E3CB78 /* ASTType.m */,
-				C4FD4B0822EE94810071652D /* DynamicOC.h */,
-				C4FD4B0922EE94810071652D /* DynamicOC.m */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		C40BAFF422E6E63C00885A9D /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				C4FD4B0F22EFEE3C0071652D /* Aspects */,
-				C4FD4B1022EFEE6E0071652D /* OCEval */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		C40BB0CD22E6E63D00885A9D /* libffi */ = {
-			isa = PBXGroup;
-			children = (
-				C40BB0CE22E6E63D00885A9D /* ffitarget_arm64.h */,
-				C40BB0CF22E6E63D00885A9D /* ffitarget.h */,
-				C40BB0D022E6E63D00885A9D /* ffi_arm.h */,
-				C40BB0D122E6E63D00885A9D /* ffi_i386.h */,
-				C40BB0D222E6E63D00885A9D /* ffitarget_x86_64.h */,
-				C40BB0D322E6E63D00885A9D /* ffi_x86_64.h */,
-				C40BB0D422E6E63D00885A9D /* ffitarget_arm.h */,
-				C40BB0D522E6E63D00885A9D /* ffitarget_i386.h */,
-				C40BB0D622E6E63D00885A9D /* libffi.a */,
-				C40BB0D722E6E63D00885A9D /* ffi.h */,
-				C40BB0D822E6E63D00885A9D /* ffi_arm64.h */,
-			);
-			path = libffi;
-			sourceTree = "<group>";
-		};
-		C40BB1A322E6E64700885A9D /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-				C40BB1A522E6E64700885A9D /* parser.ym */,
-				C40BB1A722E6E64700885A9D /* tokenizer.lm */,
-			);
-			path = Parser;
-			sourceTree = "<group>";
-		};
-		C4FD4B0F22EFEE3C0071652D /* Aspects */ = {
-			isa = PBXGroup;
-			children = (
-				C40BB0C722E6E63D00885A9D /* Aspects.h */,
-				C40BB0CB22E6E63D00885A9D /* Aspects.m */,
-			);
-			path = Aspects;
-			sourceTree = "<group>";
-		};
-		C4FD4B1022EFEE6E0071652D /* OCEval */ = {
-			isa = PBXGroup;
-			children = (
-				C40BAFF622E6E63C00885A9D /* OCMethodSignature.h */,
-				C40BAFF922E6E63C00885A9D /* OCMethodSignature.m */,
-				C4FD4B0B22EECCA90071652D /* OCExtension.h */,
-				C4FD4B0C22EECCAA0071652D /* OCExtension.m */,
-				C40BB0C622E6E63D00885A9D /* OCCfuntionHelper.h */,
-				C40BB0CC22E6E63D00885A9D /* OCCfuntionHelper.m */,
-				C40BB0C922E6E63D00885A9D /* NSValue+struct.h */,
-				C40BB0C422E6E63D00885A9D /* NSValue+struct.m */,
-				C40BB0C322E6E63D00885A9D /* OCCFuntionWrapper.h */,
-				C40BB0CA22E6E63D00885A9D /* OCCFuntionWrapper.m */,
-				C40BB0CD22E6E63D00885A9D /* libffi */,
-			);
-			path = OCEval;
 			sourceTree = "<group>";
 		};
 		C4FD4B1122EFEED90071652D /* Frameworks */ = {
@@ -423,28 +416,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40BB1AA22E6E64700885A9D /* parser.ym in Sources */,
-				C40BAFE822E6E62C00885A9D /* ASTUtil.m in Sources */,
-				C40BB1C222E8048D00885A9D /* ASTMethodNode.m in Sources */,
-				C40BB19D22E6E63D00885A9D /* Aspects.m in Sources */,
-				C40BB0DB22E6E63D00885A9D /* OCMethodSignature.m in Sources */,
-				C4FD4B0D22EECCAA0071652D /* OCExtension.m in Sources */,
+				5D36DC09236FFEEB00CC02CC /* OCMethodSignature.m in Sources */,
+				5D36DBFA236FFEEB00CC02CC /* ASTNode.m in Sources */,
+				5D36DC06236FFEEB00CC02CC /* OCCfuntionHelper.m in Sources */,
+				5D36DC05236FFEEB00CC02CC /* NSValue+struct.m in Sources */,
+				5D36DBBE236FFE9B00CC02CC /* BaseVC.m in Sources */,
+				5D36DBF9236FFEEB00CC02CC /* ASTMethodNode.m in Sources */,
+				5D36DBFC236FFEEB00CC02CC /* ASTType.m in Sources */,
+				5D36DBFB236FFEEB00CC02CC /* ASTPropertyNode.m in Sources */,
+				5D36DBFF236FFEEB00CC02CC /* DynamicOC.m in Sources */,
+				5D36DC00236FFEEB00CC02CC /* OCBlockWrapper.m in Sources */,
+				5D36DC07236FFEEB00CC02CC /* OCCFuntionWrapper.m in Sources */,
+				5D36DBF8236FFEEB00CC02CC /* ASTContext.m in Sources */,
+				5D36DBFD236FFEEB00CC02CC /* ASTUtil.m in Sources */,
+				5D36DBF6236FFEEB00CC02CC /* ASTBlockNode.m in Sources */,
+				5D36DC02236FFEEB00CC02CC /* tokenizer.lm in Sources */,
+				5D36DC03236FFEEB00CC02CC /* Aspects.m in Sources */,
+				5D36DC01236FFEEB00CC02CC /* parser.ym in Sources */,
+				5D36DBFE236FFEEB00CC02CC /* ASTVariable.m in Sources */,
 				C40BAE7022E6E5E500885A9D /* ViewController.m in Sources */,
-				E266C65422EC518500E3CB78 /* ASTBlockNode.m in Sources */,
-				C40BB1AE22E6E64700885A9D /* tokenizer.lm in Sources */,
-				C40BB19722E6E63D00885A9D /* NSValue+struct.m in Sources */,
-				C40BAFEC22E6E62C00885A9D /* ASTContext.m in Sources */,
 				C40BAE7B22E6E5E600885A9D /* main.m in Sources */,
-				C40BAFEE22E6E62C00885A9D /* ASTNode.m in Sources */,
-				C40BB19B22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */,
-				C4FD4B0A22EE94810071652D /* DynamicOC.m in Sources */,
+				5D36DC08236FFEEB00CC02CC /* OCExtension.m in Sources */,
 				C40BAE6D22E6E5E500885A9D /* AppDelegate.m in Sources */,
-				E266C65822EC5A3600E3CB78 /* ASTType.m in Sources */,
-				C40BAFF222E6E62C00885A9D /* ASTVariable.m in Sources */,
-				C40BB19F22E6E63D00885A9D /* OCCfuntionHelper.m in Sources */,
-				E266C65C22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */,
-				C40BAFEA22E6E62C00885A9D /* ASTPropertyNode.m in Sources */,
-				C40BAFF022E6E62C00885A9D /* ASTCallMethod.m in Sources */,
+				5D36DBF7236FFEEB00CC02CC /* ASTCallMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,34 +446,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40BAFF322E6E62C00885A9D /* ASTVariable.m in Sources */,
 				C40BB1B122E6E6EE00885A9D /* CallCFunctionTest.m in Sources */,
 				E289986A22E73D6C00811B14 /* OCForControlTest.m in Sources */,
 				C40BB1B722E711E900885A9D /* OCWhileControlTest.m in Sources */,
-				C40BB19822E6E63D00885A9D /* NSValue+struct.m in Sources */,
-				C40BB1A022E6E63D00885A9D /* OCCfuntionHelper.m in Sources */,
-				E266C65522EC518500E3CB78 /* ASTBlockNode.m in Sources */,
-				C4FD4B0E22EECCAA0071652D /* OCExtension.m in Sources */,
-				C40BAFEF22E6E62C00885A9D /* ASTNode.m in Sources */,
-				C40BB1AF22E6E64700885A9D /* tokenizer.lm in Sources */,
 				E289986E22E745A300811B14 /* UnaryOperationTest.m in Sources */,
-				C40BB1AB22E6E64700885A9D /* parser.ym in Sources */,
 				C40BB1B922E7F18F00885A9D /* OCPropertyTest.m in Sources */,
 				E289986C22E741D000811B14 /* ArithmeticTest.m in Sources */,
 				C40BB1B522E6EB6400885A9D /* OCIfControlTest.m in Sources */,
-				C40BB19C22E6E63D00885A9D /* OCCFuntionWrapper.m in Sources */,
-				C40BAFED22E6E62C00885A9D /* ASTContext.m in Sources */,
 				E2A257CD22EA7B1B002CE431 /* OCContainerTest.m in Sources */,
-				C40BAFEB22E6E62C00885A9D /* ASTPropertyNode.m in Sources */,
 				C4D51D3722EB072C009FEAEA /* OCBlockTest.m in Sources */,
-				C40BB19E22E6E63D00885A9D /* Aspects.m in Sources */,
-				C40BAFE922E6E62C00885A9D /* ASTUtil.m in Sources */,
-				C40BB1C322E8048D00885A9D /* ASTMethodNode.m in Sources */,
 				C40BB1B322E6EAC200885A9D /* CallOCFunctionTest.m in Sources */,
-				C40BAFF122E6E62C00885A9D /* ASTCallMethod.m in Sources */,
-				E266C65D22ED47AA00E3CB78 /* OCBlockWrapper.m in Sources */,
-				E266C65922EC5A3600E3CB78 /* ASTType.m in Sources */,
-				C40BB0DC22E6E63D00885A9D /* OCMethodSignature.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +617,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DynamicOC/Vendor/helper/libffi",
 					"$(PROJECT_DIR)/DynamicOC/Vendor/OCEval/libffi",
+					"$(PROJECT_DIR)/DynamicOC/SSPatch/Vendor/OCEval/libffi",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.szl.DynamicOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,7 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 686532JGRW;
 				INFOPLIST_FILE = DynamicOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -666,10 +643,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/DynamicOC/Vendor/helper/libffi",
 					"$(PROJECT_DIR)/DynamicOC/Vendor/OCEval/libffi",
+					"$(PROJECT_DIR)/DynamicOC/SSPatch/Vendor/OCEval/libffi",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.szl.DynamicOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "c0708c94-b663-4998-935b-e6915fb57e72";
+				PROVISIONING_PROFILE_SPECIFIER = AppDevelopTest_Dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
